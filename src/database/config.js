@@ -7,7 +7,7 @@ const connectDB = async () => {
     );
     console.log(` MONGO_DB Connected ${connectionInterface.connection.host}`);
   } catch (error) {
-    console.log(chalk.red.bold("\n MONGO_DB Connection Failed"), error);
+    console.log("\n MONGO_DB Connection Failed", error);
     process.exit(1);
   }
 };
